@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Remote App</title>
+    <!-- Bootstrap -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.5, maximum-scale=1.5;" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+
+    <style type="text/css">
+        html,body{background-color:#000;}
+    </style>
+</head>
+
+<body>
+<div class="row">
+    <div class="col-xs-12 col-md-6">
+        <button onclick='$.get( "/onkyo/powerOn")' class="btn btn-danger btn-large"><i class="icon-white icon-off"></i></button>
+        <button onclick='$.get( "/onkyo/powerOff")' class="btn btn-inverse btn-large"><i class="icon-remove-sign"></i></button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button onclick='$.get( "/onkyo/airplay")' class="btn  btn-large"><i class="icon-music"></i>AirPlay</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button onclick='$.get( "/onkyo/roku")' class="btn btn-warning btn-large"><i class="icon-facetime-video"></i> Roku</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button onclick='$.get( "/onkyo/chrome")' class="btn btn-warning btn-large"><i class="icon-facetime-video"></i>Chrome Cast</button>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+        <button onclick='$.get( "/onkyo/ps3")' class="btn btn-danger btn-large"><i class="icon-facetime-video"></i>ps3</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button onclick='$.get( "/onkyo/volDown10")' class="btn btn-info btn-large"><i class="icon-volume-down"></i> 10</button>
+            <button onclick='$.get( "/onkyo/volUp10")' class="btn btn-info btn-large"><i class="icon-volume-up"></i> 10</button>
+    </div>
+    <div class="col-xs-12 col-md-6">
+        <button onclick='$.get( "/onkyo/volDown")' class="btn btn-info btn-large"><i class="icon-volume-down"></i>1</button>
+        <button onclick='$.get( "/onkyo/volUp")' class="btn btn-info btn-large"><i class="icon-volume-up"></i>1</button>
+    </div>
+
+</div>
+
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+
+
+</html>
